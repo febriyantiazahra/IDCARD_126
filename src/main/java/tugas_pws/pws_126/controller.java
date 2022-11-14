@@ -31,11 +31,15 @@ public class controller {
                           @RequestParam("image") MultipartFile file, Model model)
                           throws IOException {
         
-        SimpleDateFormat tanggal = new SimpleDateFormat("EE-dd-MMMM-yyyy");
+        SimpleDateFormat tanggal = new SimpleDateFormat("EEEE, dd MMMM yyyy");
         String newTanggal = tanggal.format(date);
         
         String blob = Base64.encodeBase64String(file.getBytes());
         String img = "data:image/jpeg;base64,".concat(blob);
+        
+        model.addAttribute("nama", text);
+        model.addAttribute("tanggal", newTanggal);
+        model.addAttribute("image", img);
         
         return "view";
     }
