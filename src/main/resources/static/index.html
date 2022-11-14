@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lengkapi Data Diri</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Data Diri Mahasiswa</div>
+        <hr />
+        <form action="/getData" method="POST" enctype="multipart/form-data">
+            Nama : <input type="text" name="nama"><br>
+            <br>
+            Tanggal Lahir : <input type="date" name="tanggal"><br>
+            <br>
+            Pas Foto : <input type="file" name="image"><br>
+            <br>
+            <input type="submit" value="SUBMIT"><br>
+        </form>
+    </body>
+</html>
