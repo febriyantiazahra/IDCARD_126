@@ -11,16 +11,35 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Data Diri Mahasiswa</div>
+        <div><b>Data Diri Mahasiswa</b></div>
         <hr />
         <form action="/getData" method="POST" enctype="multipart/form-data">
-            Nama : <input type="text" name="nama"><br>
+            <b>Nama : </b><input type="text" name="nama"><br>
             <br>
-            Tanggal Lahir : <input type="date" name="tanggal"><br>
+            <b>Tanggal Lahir : </b><input type="date" name="tanggal"><br>
             <br>
-            Pas Foto : <input type="file" name="image"><br>
+            <b>Pas Foto : </b><input type="file" name="image"><br>
             <br>
-            <input type="submit" value="SUBMIT"><br>
+            <input type="submit" value="submit"><br>
         </form>
+        <style>
+            div{
+                background:  #FDFEFE;
+                text-align: center;
+                margin-top: 20px;
+            }
+            body{
+                background: #A2D9CE;
+            }
+            form{
+                margin-top: 50px;
+            }
+            a{
+                font-size: 15px;
+            }
+            input {
+                font-size: 15px;
+            }
+        </style>
     </body>
 </html>
