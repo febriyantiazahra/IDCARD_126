@@ -13,8 +13,44 @@ and open the template in the editor.
     <body>
         <div><b>KARTU TANDA MAHASISWA</b></div>
         <hr>
-        <p> Nama            : <b th:text="${nama}"></b> </p>
-        <p> Tanggal Lahir   : <b th:text="${tanggal}"></b> </p>
-        <p> Pas Foto        : <img th:src="${image}" alt=""></b> </p>
+        <table align='center'>
+            <thead>
+                <tr>
+                    <td><b>Nama</b></td>
+                    <td><b>Tanggal Lahir</b></td>
+                    <td><b>Pas Foto</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td th:text="${nama}"></td>
+                    <td th:text="${tanggal}"></td>
+                    <td> <img th:src="${image}"> </td>
+                </tr>
+            </tbody>
+        </table>
     </body>
+    <style>
+        div{
+            background:#FDFEFE;
+            text-align: center;
+            margin-top: 20px;
+        }
+        body{
+            background: #A2D9CE;
+        }
+        table, td{
+            margin-top: 80px;
+            text-align: center;
+        }
+        td{
+            border: 2px solid;
+        }
+        img{
+            border: 2px;
+            border-radius: 4px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
 </html>
